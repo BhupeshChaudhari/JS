@@ -32,9 +32,21 @@ console.log(obj3);
 console.log(obj31);
 
 
-
 console.log(Object.keys(tinderUser));       // array of keys
 console.log(Object.values(tinderUser));     // array of values
 console.log(Object.entries(tinderUser));
 
 
+// =======================================================================================================
+// OBJECT DECONSTRUCTURE
+
+const course = {
+    coursename : "JS",
+    price : "1000",
+    courseInstructor : "ABC"
+}
+
+// course.courseInstructor
+
+const {courseInstructor : guide} = course
+console.log(guide);
