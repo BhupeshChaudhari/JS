@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and clearInterval using start and stop button</title>
+</head>
+<body>
+    <h1>JS</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // to print random number after every 2 sec 
+    // setInterval(function(){
+    //     const newh1 = document.createElement('h1')
+    //     newh1.innerHTML = parseInt(Math.random() * 10 + 1)
+    //     document.body.appendChild(newh1)
+    // }, 2000)
+// ==================================================================================
+    
+    const sayDate = function(){
+        console.log("Bhupesh", Date.now());
+    }
+
+    document.querySelector('#start').addEventListener('click', ()=>{
+        const setInt = setInterval(sayDate, 1000)
+        document.querySelector('#stop').addEventListener('click', ()=>{
+        clearInterval(setInt)
+    })
+    })
+
+// =====================================================================================
+</script>
+</html>
