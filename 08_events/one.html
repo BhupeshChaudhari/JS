@@ -35,7 +35,7 @@
     //     e.stopPropagation()
     // }, false)
 
-    // // type, timestamp, defaultPrevent
+    // // // type, timestamp, defaultPrevent
 
     // document.getElementById('google').addEventListener('click', function(e){
     //     e.preventDefault()
@@ -49,7 +49,10 @@
         // let removeIt = e.target.parentNode
         // removeIt.remove()
 
+        console.log(e)
+        console.log(e.target)
         console.log(e.target.tagName);
+
         if (e.target.tagName === 'IMG') {
             let removeIt = e.target.parentNode
             removeIt.remove()           
