@@ -26,5 +26,3 @@ const tea = new createUser("Tea", 25)
 const tea2 = new createUser("Tea2", 40)
 
 tea.printMe()
-
-createUser.printMe()
